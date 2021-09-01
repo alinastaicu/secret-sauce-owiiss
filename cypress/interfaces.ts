@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 export enum ITEM {
   backpack = 'sauce-labs-backpack',
   bikeLight = 'sauce-labs-bike-light',

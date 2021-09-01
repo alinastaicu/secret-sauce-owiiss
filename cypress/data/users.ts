@@ -22,3 +22,5 @@ export const performanceGlitchUser: IUserModel = {
   username: 'performance_glitch_user',
   password: 'secret_sauce',
 };
+
+export const allUsersIWantToTest = [standardUser, performanceGlitchUser, problemUser];

@@ -1,3 +1,12 @@
+# How to run
+....
+
+# How to run in docker
+....
+
+# Read more here
+....
+
 # Test Automation Engineer - Coding Challenge
 
 Welcome! We're super happy to have you here and that you are interested in working with the Capmo Engineering Team. To get a better idea of your automation skills, we'd like you to complete the following coding challenge. Some rules & guidelines.

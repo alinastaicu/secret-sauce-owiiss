@@ -1,6 +1,6 @@
 class ItemPage {
   public get image() {
-    return cy.get('.inventory_item_img');
+    return cy.get('img.inventory_item_img');
   }
 
   public get itemName() {
