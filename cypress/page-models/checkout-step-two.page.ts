@@ -11,7 +11,7 @@ class CheckoutStepTwo {
   }
 
   public get itemName() {
-    return cy.get('inventory_item_name');
+    return cy.get('.inventory_item_name');
   }
 
   public get itemDescription() {
@@ -24,6 +24,10 @@ class CheckoutStepTwo {
 
   public get summaryInfo() {
     return cy.get('.summary_info');
+  }
+
+  public get finish() {
+    return cy.get('[data-test="finish"]');
   }
 }
 

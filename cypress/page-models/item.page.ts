@@ -1,4 +1,8 @@
 class ItemPage {
+  public get image() {
+    return cy.get('.inventory_item_img');
+  }
+
   public get itemName() {
     return cy.get('.inventory_item_name');
   }
@@ -12,11 +16,11 @@ class ItemPage {
   }
 
   public removeItem(itemType: string) {
-    return cy.get(`[data-test="remove-sauce-labs-${itemType}"]`);
+    return cy.get(`[data-test="remove-${itemType}"]`);
   }
 
   public addItem(itemType: string) {
-    return cy.get(`[data-test="add-to-cart-sauce-labs-${itemType}"]`);
+    return cy.get(`[data-test="add-to-cart-${itemType}"]`);
   }
 
   public get intemSort() {

@@ -1,3 +1,9 @@
+export interface ICheckoutStepOne {
+  firstName: string;
+  lastName: string;
+  postalCode: string;
+}
+
 class CheckoutStepOne {
   public get firstName() {
     return cy.get(`[data-test="firstName"]`);
@@ -13,6 +19,12 @@ class CheckoutStepOne {
 
   public get continueButton() {
     return cy.get(`[data-test="continue"]`);
+  }
+
+  public fillCheckoutStepOne(data: ICheckoutStepOne) {
+    this.firstName.type(data.firstName);
+    this.lastName.type(data.lastName);
+    this.postalCode.type(data.postalCode);
   }
 }
 
