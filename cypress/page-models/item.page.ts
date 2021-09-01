@@ -22,14 +22,6 @@ class ItemPage {
   public addItem(itemType: string) {
     return cy.get(`[data-test="add-to-cart-${itemType}"]`);
   }
-
-  public get intemSort() {
-    return cy.get(`[data-test="product_sort_container"]`);
-  }
-
-  public get burgerButton() {
-    return cy.get('.bm-burger-button');
-  }
 }
 
 export const itemPage = new ItemPage();
