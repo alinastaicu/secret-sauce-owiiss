@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "test": "cypress run --headed --browser chrome",
+    "cypress:open": "cypress open",
+    "cypress:ci": "cypress run --headless",
+    "tsc": "tsc --noEmit",
+    "lint": "eslint 'cypress/**/*.ts' --fix",
+    "lint:fix": "eslint 'cypress/**/*.ts' --fix"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^5.6.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "cypress": "^7.5.0",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-unicorn": "^20.0.0",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
+    "ts-loader": "^8.0.18",
+    "webpack": "^4.43.0"
+  }
+}
