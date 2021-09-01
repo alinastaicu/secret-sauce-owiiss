@@ -23,4 +23,10 @@ export const performanceGlitchUser: IUserModel = {
   password: 'secret_sauce',
 };
 
-export const allUsersIWantToTest = [standardUser, performanceGlitchUser, problemUser];
+const userKeyMap = {
+  standard: standardUser,
+  glitchy: performanceGlitchUser,
+  problem: problemUser,
+};
+
+export const allUsersIWantToTest = (Cypress.env('users') || '').split(',').map((k) => userKeyMap[k.trim()]);

@@ -1,7 +1,8 @@
 {
-    "projectId": "",
+    "projectId": "fqcwnq",
     "videoUploadOnPasses": false,
     "runMode": 2,
     "video": true,
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "env": {"users": "standard,glitchy,problem"}
   }

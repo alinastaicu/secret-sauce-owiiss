@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "cypress run --headed --browser chrome",
+    "cypress:run:chrome": "cypress run --headed --browser chrome",
     "cypress:open": "cypress open",
     "cypress:ci": "cypress run --headless",
     "tsc": "tsc --noEmit",
