@@ -26,4 +26,20 @@ for (const user of users.allUsersIWantToTest) {
       });
     });
   });
+
+  describe(`GIVEN I want to log out for ${user.username}`, () => {
+    describe(`WHEN I login to the app`, () => {
+      before(() => {
+        loginPage.navigate();
+        loginPage.fillLoginForm({ username: user.username, password: user.password });
+        loginPage.loginButton.click();
+      });
+
+      it('SHOULD see the login page', () => {
+        burgerMenu.menu.click();
+        burgerMenu.logout.click();
+        cy.url().should('be.equal', 'https://www.saucedemo.com/');
+      });
+    });
+  });
 }
