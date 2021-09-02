@@ -33,5 +33,22 @@ for (const user of users.allUsersIWantToTest) {
           .should('contain.text', 'Your order has been dispatched, and will arrive just as fast as the pony can get there!')
           .should('be.visible'));
     });
+
+    describe(`WHEN I navigate back to products`, () => {
+      before(() => {
+        loginPage.navigate();
+        loginPage.fillLoginForm({ username: user.username, password: user.password });
+        loginPage.loginButton.click();
+        itemPage.addItem(ITEM.boltTshirt).click();
+        shoppingCartPage.shoppingCartBadge.click();
+        shoppingCartPage.checkoutButton.click();
+        checkoutStepOne.fillCheckoutStepOne({ firstName: 'Max', lastName: 'Pecu', postalCode: '80636' });
+        checkoutStepOne.continueButton.click();
+        checkoutStepTwo.finish.click();
+        checkoutComplete.backToProductsButton.click();
+      });
+
+      it('SHOULD navigate to the product page', () => cy.url().should('be.equal', 'https://www.saucedemo.com/inventory.html'));
+    });
   });
 }

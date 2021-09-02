@@ -48,7 +48,7 @@ chmod u+x ./cy-run.sh
 - Instead of running in docker I would implement something like Circle.ci
 - To be able to run tests in parallel I need to setup a CI environment, like Circle.CI for cypress
 
-----
+--------------
 
 # Test Automation Engineer - Coding Challenge
 
