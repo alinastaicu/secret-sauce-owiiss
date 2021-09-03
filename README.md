@@ -42,13 +42,17 @@ chmod u+x ./cy-run.sh
 
 ```
 
+# More details about the project 
+
+https://speckled-run-ba0.notion.site/Capmo-Challenge-6fc377922c2042c28e063467ca47b8f7
+
 # TODOs:
 
 - currently using Cypress Dashboard for reports. My recommendation is to continue using Cypress Dashboard even if it's freemium tool. A free alternative is https://docs.qameta.io/allure/
 - Instead of running in docker I would implement something like Circle.ci
 - To be able to run tests in parallel I need to setup a CI environment, like Circle.CI for cypress
 
---------------
+---------------------------------------------
 
 # Test Automation Engineer - Coding Challenge
 
